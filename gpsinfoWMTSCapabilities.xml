@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Capabilities xmlns="http://www.opengis.net/wmts/1.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wmts/1.0 http://schemas.opengis.net/wmts/1.0/wmtsGetCapabilities_response.xsd" version="1.0.0">
+    <ows:ServiceIdentification>
+        <ows:Title>TESTSERVER</ows:Title>
+        <ows:Keywords>
+            <ows:Keyword>gpsinfo</ows:Keyword>
+        </ows:Keywords>
+        <ows:ServiceType>OGC WMTS</ows:ServiceType>
+        <ows:ServiceTypeVersion>2.0</ows:ServiceTypeVersion>
+        <ows:Fees>none</ows:Fees>
+        <ows:AccessConstraints>https://creativecommons.org/licenses/by/4.0/</ows:AccessConstraints>
+    </ows:ServiceIdentification>
+    <ows:ServiceProvider>
+        <ows:ProviderName>Rechenraum GmbH</ows:ProviderName>
+        <ows:ProviderSite xlink:href="https://www.rechenraum.com"/>
+        <ows:ServiceContact>
+            <ows:ContactInfo>
+                <ows:Address>
+                    <ows:City>Vienna</ows:City>
+                    <ows:Country>Austria</ows:Country>
+                    <ows:ElectronicMailAddress>office@rechenraum.com</ows:ElectronicMailAddress>
+                </ows:Address>
+            </ows:ContactInfo>
+        </ows:ServiceContact>
+    </ows:ServiceProvider>
+    <Contents>
+        <Layer>
+            <ows:Title>TESTSERVER</ows:Title>
+            <ows:Abstract>Testservice</ows:Abstract>
+            <ows:Identifier>TESTSERVER</ows:Identifier>
+            <Style isDefault="true"/>
+            <Format>text/plain</Format>
+            <TileMatrixSetLink>
+                <TileMatrixSet>TESTSERVER</TileMatrixSet>
+            </TileMatrixSetLink>
+            <ResourceURL format="text/plain" resourceType="tile" template="https://raw.githubusercontent.com/maegger/TEST/master//TESTSERVER/{TileCol}/{TileRow}.asc"/>
+        </Layer>
+        <TileMatrixSet>
+            <ows:Title>TESTSERVER</ows:Title>
+            <ows:Identifier>TESTSERVER</ows:Identifier>
+            <ows:SupportedCRS>urn:ogc:def:crs:EPSG::0</ows:SupportedCRS>
+            <TileMatrix>
+                <ows:Identifier>0</ows:Identifier>
+                <ScaleDenominator>1.7857142857e+03</ScaleDenominator>
+                <TopLeftCorner>7.4997500000e+03 2.9000025000e+05</TopLeftCorner>
+                <TileWidth>100</TileWidth>
+                <TileHeight>100</TileHeight>
+                <MatrixWidth>26</MatrixWidth>
+                <MatrixHeight>21</MatrixHeight>
+            </TileMatrix>
+        </TileMatrixSet>
+    </Contents>
+    <ServiceMetadataURL xlink:href="https://raw.githubusercontent.com/maegger/TEST/master/"/>
+</Capabilities>
